@@ -81,7 +81,7 @@ require_once('close.php');
         <p>
             <button>Enregistrer</button>
         </p>
-        <input type="hidden" name="id" value="<?= $employee['id'] ?>">
+        <input type="hidden" name="id" value="<?= $employee['emp_id'] ?>">
     </form>
 </body>
 
