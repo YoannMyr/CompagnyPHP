@@ -44,22 +44,35 @@ require_once('close.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Ajouter Employé</title>
 </head>
 
 <body>
-    <h1>Ajouter un employé</h1>
-    <form method="post">
-        <label for="first_name">Prénom</label>
-        <input type="text" name="first_name" id="first_name">
-        <label for="last_name">Nom</label>
-        <input type="text" name="last_name" id="last_name">
-        <label for="birth_day">Date de naissance</label>
-        <input type="date" name="birth_day" id="birth_day">
-        <label for="sex">Sexe</label>
-        <input type="text" name="sex" id="sex">
-        <button>Enregistrer</button>
-    </form>
+    <div class="add-centre">
+        <div class="add-centre2">
+            <h1>Ajouter un employé</h1>
+            <form class="form-add" method="post">
+                <div class="div-form-add">
+                    <div class="div-add"><label class="label-add" for="first_name">Prénom</label>
+                        <input class="input-add" type="text" name="first_name" id="first_name">
+                    </div>
+                    <div class="div-add"><label class="label-add" for="last_name">Nom</label>
+                        <input class="input-add" type="text" name="last_name" id="last_name">
+                    </div>
+                    <div class="div-add"><label class="label-add" for="birth_day">Date de naissance</label>
+                        <input class="input-add" type="date" name="birth_day" id="birth_day">
+                    </div>
+                    <div class="div-add"><label class="label-add" for="sex">Sexe</label>
+                        <input class="input-add" type="radio" name="sex" id="sex" value="H">Homme
+                        <input class="input-add" type="radio" name="sex" id="sex" value="F">Femme
+                    </div>
+                </div>
+                <button>Enregistrer</button>
+
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>

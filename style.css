@@ -1,0 +1,213 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+::-webkit-scrollbar {
+    width: 9px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(241, 239, 239); 
+    border-radius: 15px;
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgb(0, 0, 0); 
+    border-radius: 15px;
+}
+
+body{
+background: #c850c0;
+background: -webkit-linear-gradient(45deg,#4158d0,#c850c0);
+font-family: 'Roboto', sans-serif;
+color: #fff;
+}
+section{
+  margin: 50px;
+}
+
+h1{
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 550;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  table{
+    width:100%;
+    table-layout: fixed;
+    
+  }
+  .tbl-header{
+    background: #db0a0a23;
+    margin-bottom: 3px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 15px 15px 0 0;
+   }
+  .tbl-content{
+    background: #4158d0;
+    background: -webkit-linear-gradient(45deg,#c850c0,#4158d0);
+    max-height:450px;
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 2px solid rgba(255,255,255,0.3);
+    margin-bottom: 25px;
+    border-radius: 0 0 15px 15px;
+  }
+  tbody{
+    height:300px;
+    overflow-x:auto;
+}
+
+  th{
+    padding: 20px 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 15px;
+    background: #ffffff00;
+  }
+  td{
+    padding: 15px;
+    text-align: center;
+    vertical-align:middle;
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.055);
+  }
+  
+.action{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+ a{ 
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px 5px 10px ;
+    border: 1px solid rgba(46, 42, 42, 0.233);
+    border-radius: 10px;
+    margin: 5px;
+  }
+
+  a:visited{
+    color: #fff;
+  }
+  
+a:hover{
+    scale: 1.1;
+    transition: 150ms;
+    background: -webkit-linear-gradient(45deg,#c850c0,#4158d0);
+}
+
+  .add {
+    padding: 10px 20px 10px 20px;
+    background: #4158d0;
+    background: -webkit-linear-gradient(45deg,#c850c0,#4158d0);
+    border: 2px solid rgba(46, 42, 42, 0.233);
+    font-weight: 450;
+  }
+
+  .add:hover{
+    background: #0000001a;
+    transform: scale(10%);
+  }
+  
+
+  /*? **********Customs All Forms */
+  label{ 
+    color: #fff;
+  }
+
+  .add-centre{
+    
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-centre2{
+    width: fit-content;
+    background: #fffdfd2d;
+    padding: 25px 50px 25px 50px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px 12px rgba(40, 42, 43, 0.151);
+}
+
+label{
+    margin-right: 20px;
+    font-size: 20px;
+  }
+
+  input{
+    border-radius: 7px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    box-shadow: 4px 3px 2px 0px rgba(40, 42, 43, 0.151);
+  }
+
+  button{
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    background: #4158d0;
+    background: -webkit-linear-gradient(45deg,#c850c0,#4158d0);
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    box-shadow: 4px 3px 2px 0px rgba(40, 42, 43, 0.151);
+  }
+
+  button:hover{
+    scale: 1.1;
+    transition: 200ms;
+    cursor: pointer;
+  }
+
+  p {
+    margin: 3px;
+  }
+
+
+  /*? **********Add.php********** */
+ 
+
+
+ .form-add{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    align-items: flex-end;
+  }
+
+.div-form-add{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+
+.div-add{
+    margin-bottom: 3px;
+}
+
+  
+/*? **********Details.php********** */
+
+.p-details{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.a-details:hover{
+    scale: 1.1;
+    transition: 200ms;
+}

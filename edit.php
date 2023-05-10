@@ -56,33 +56,40 @@ require_once('close.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Modification Employé</title>
 </head>
 
 <body>
-    <h1>Modification d'un employé</h1>
-    <form method="post">
-        <p>
-            <label for="first_name">Prénom</label>
-            <input type="text" name="first_name" id="first_name" value="<?= $employee['first_name'] ?>">
-        </p>
-        <p>
-            <label for="last_name">Nom</label>
-            <input type="text" name="last_name" id="last_name" value="<?= $employee['last_name'] ?>">
-        </p>
-        <p>
-            <label for="birth_day">Date de naissance</label>
-            <input type="date" name="birth_day" id="birth_day" value="<?= $employee['birth_day'] ?>">
-        </p>
-        <p>
-            <label for="sex">Sexe</label>
-            <input type="text" name="sex" id="sex" value="<?= $employee['sex'] ?>">
-        </p>
-        <p>
-            <button>Enregistrer</button>
-        </p>
-        <input type="hidden" name="id" value="<?= $employee['emp_id'] ?>">
-    </form>
+    <div class="add-centre">
+        <div class="add-centre2">
+            <h1>Modification d'un employé</h1>
+            <form class="form-edit" method="post">
+                <div class="div-form-add">
+                    <p>
+                        <label for="first_name">Prénom</label>
+                        <input type="text" name="first_name" id="first_name" value="<?= $employee['first_name'] ?>">
+                    </p>
+                    <p>
+                        <label for="last_name">Nom</label>
+                        <input type="text" name="last_name" id="last_name" value="<?= $employee['last_name'] ?>">
+                    </p>
+                    <p>
+                        <label for="birth_day">Date de naissance</label>
+                        <input type="date" name="birth_day" id="birth_day" value="<?= $employee['birth_day'] ?>">
+                    </p>
+                    <p>
+                        <label for="sex">Sexe</label>
+                        <input type="text" name="sex" id="sex" value="<?= $employee['sex'] ?>">
+                    </p>
+                    <p>
+                        <button>Enregistrer</button>
+                    </p>
+                    <input type="hidden" name="id" value="<?= $employee['emp_id'] ?>">
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>

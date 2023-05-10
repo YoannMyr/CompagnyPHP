@@ -39,18 +39,23 @@ require_once('close.php');
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Détails de l'employé</title>
 </head>
 
 <body>
-    <h1>Détails de l'employé</h1>
-    <p>ID : <?= $employee['emp_id'] ?></p>
-    <p>Prénom : <?= $employee['first_name'] ?></p>
-    <p>Nom : <?= $employee['last_name'] ?></p>
-    <p>Date de naissance : <?= $employee['birth_day'] ?></p>
-    <p>Sexe : <?= $employee['sex'] ?></p>
-    <p>Salaire : <?= $employee['salary'] ?></p>
-    <p><a href="edit.php?id=<?= $employee['emp_id'] ?>">Modifier</a> <a href="delete.php?id=<?= $employee['emp_id'] ?>">Supprimer</a></p>
+    <div class="add-centre">
+        <div class="add-centre2">
+            <h1>Détails de l'employé</h1>
+            <p class="p-details">ID : <?= $employee['emp_id'] ?></p>
+            <p class="p-details">Prénom : <?= $employee['first_name'] ?></p>
+            <p class="p-details">Nom : <?= $employee['last_name'] ?></p>
+            <p class="p-details">Date de naissance : <?= $employee['birth_day'] ?></p>
+            <p class="p-details">Sexe : <?= $employee['sex'] ?></p>
+            <p class="p-details">Salaire en $ : <?= $employee['salary'] ?></p>
+            <p class="p-details"><a class="a-details" href="edit.php?id=<?= $employee['emp_id'] ?>">Modifier</a> <a class="a-details" href="delete.php?id=<?= $employee['emp_id'] ?>">Supprimer</a></p>
+        </div>
+    </div>
 </body>
 
 </html>
