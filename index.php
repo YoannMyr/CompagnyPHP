@@ -37,18 +37,20 @@ require_once('close.php');
             <th>Nom</th>
             <th>Date de naissance</th>
             <th>Sexe</th>
+            <th>Salaire</th>
         </thead>
         <tbody>
         <?php
-        foreach($result as $produit){
+        foreach($result as $employee){
             ?>
             <tr>
-                <td><?= $produit['emp_id'] ?></td>
-                <td><?= $produit['first_name'] ?></td>
-                <td><?= $produit['last_name'] ?></td>
-                <td><?= $produit['birth_day'] ?></td>
-                <td><?= $produit['sex'] ?></td>
-                <td><a href="details.php?id=<?= $produit['emp_id'] ?>">Voir</a>  <a href="edit.php?id=<?= $produit['emp_id'] ?>">Modifier</a>  <a href="delete.php?id=<?= $produit['emp_id'] ?>">Supprimer</a></td>
+                <td><?= $employee['emp_id'] ?></td>
+                <td><?= $employee['first_name'] ?></td>
+                <td><?= $employee['last_name'] ?></td>
+                <td><?= $employee['birth_day'] ?></td>
+                <td><?= $employee['sex'] ?></td>
+                <td><?= $employee['salary'] ?></td>
+                <td><a href="details.php?id=<?= $employee['emp_id'] ?>">Voir</a>  <a href="edit.php?id=<?= $employee['emp_id'] ?>">Modifier</a>  <a href="delete.php?id=<?= $employee['emp_id'] ?>">Supprimer</a></td>
             </tr>
             <?php
         }
@@ -61,7 +63,7 @@ require_once('close.php');
 
 
     
-}
+
 
 
 
