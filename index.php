@@ -22,13 +22,15 @@ require_once('close.php');
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Liste des employés</title>
 </head>
+
+// Récupère les données des employés de la base de données et les affiche dans un tableau
 
 <body>
     <!--Mise en forme du tableau qui contiendra les données employés -->

@@ -1,4 +1,7 @@
 <?php
+
+//! Delete employee from the database
+
 require_once('connect.php');
 
 if (isset($_GET['id']) && !empty($_GET['id'])) {
